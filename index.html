@@ -1,11 +1,92 @@
- <!DOCTYPE html>
- <html lang="en">
- <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
- </head>
- <body>
-    
- </body>
- </html>
+    <title>Profile Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-500">
+
+    <div class="min-h-screen flex items-center justify-center py-12">
+        <div class="bg-[#011d2a] w-full max-w-5xl shadow-xl rounded-lg p-10">
+            <div class="flex gap-5">
+                <!-- Left Side - Profile Picture and Menu -->
+                <div class="w-1/4 p-4 ">
+                    <div class="flex flex-col items-center text-white">
+                        <img class="w-24 h-24 rounded-full object-cover mb-4" src="https://via.placeholder.com/150" alt="Profile Picture">
+                        <h1 class="text-center text-3xl font-bold">Abhishek</h1>
+                        <p class="text-center mb-8 opacity-[0.8]">Mern Stack Developer</p>
+
+                        <ul>
+                            <li class="mb-4">
+                                <a href="#" class="font-medium">Profile</a>
+                            </li>
+                            <li class="mb-4">
+                                <a href="#" class="font-medium">Work Opportunities</a>
+                            </li>
+                            <li class="mb-4">
+                                <a href="#" class="font-medium">Password</a>
+                            </li>
+                            <li class="mb-4">
+                                <a href="#" class="font-medium">Social Profiles</a>
+                            </li>
+                            <li class="mb-4">
+                                <a href="#" class="font-medium">Sessions</a>
+                            </li>
+                            <li class="mb-4">
+                                <a href="#" class="font-medium">Applications</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Right Side - Profile Information -->
+                <div class="w-3/4 bg-[#032D3C] p-6 rounded-lg shadow-md">
+                    <h2 class="text-2xl font-bold mb-4 text-white mb-5">Profile Information</h2>
+                    <form>
+                        <div class="grid grid-cols-2 gap-4 mb-4">
+                            <div>
+                                <label class="block text-md font-medium text-white">Name</label>
+                                <input type="text" class="mt-1 block w-full px-3 py-2 bg-gray-400 border border-gray-300 rounded-md shadow-sm" value="Abhishek">
+                            </div>
+                            <div>
+                                <label class="block text-md font-medium text-white">Full Name</label>
+                                <input type="text" class="mt-1 block w-full px-3 py-2 bg-gray-400 border border-gray-300 rounded-md shadow-sm" value="Maddheshiya">
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-2 gap-4 mb-4">
+                            <div>
+                                <label class="block text-md font-medium text-white">Email</label>
+                                <input type="email" class="mt-1 block w-full px-3 py-2 bg-gray-400 border border-gray-300 rounded-md shadow-sm" value="abhishekmaddheshiya632@gmail.com">
+                            </div>
+                            <div>
+                                <label class="block text-md font-medium text-white">Location</label>
+                                <input type="text" class="mt-1 block w-full px-3 py-2 bg-gray-400 border border-gray-300 rounded-md shadow-sm" value="USA">
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-2 gap-4 mb-4">
+                            <div>
+                                <label class="block text-md font-medium text-white">Website</label>
+                                <input type="url" class="mt-1 block w-full px-3 py-2 bg-gray-400 border border-gray-300 rounded-md shadow-sm" value="https://johndoe.dev">
+                            </div>
+                            <div>
+                                <label class="block text-md font-medium text-white">Bio</label>
+                                <textarea class="mt-1 block w-full px-3 py-2 bg-gray-400 border border-gray-300 rounded-md shadow-sm" rows="3">Experienced software engineer specializing in full-stack development, cloud solutions, and system architecture.</textarea>
+                            </div>
+                        </div>
+
+                        <div class="flex justify-between items-center">
+                            <span class="text-white text-md"> <b>Profile Completion:</b> 80%</span>
+                            <button type="submit" class="bg-white mt-10 text-black font-semibold px-4 py-2 rounded-md shadow-sm hover:bg-[#011d2a] hover:text-white hover:shadow-xl hover:border-2">Save Changes</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
